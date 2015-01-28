@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Contact Me</title>
+		<style>
+			body
+			{
+				background-image:url("Images/background.jpg");
+				margin:0px;
+				color:white;
+				background-attachment:fixed;
+			}
+			#main
+			{
+				padding:10px;
+				width:50%;
+				margin:auto;
+				background-color:rgba(0,0,0,.7);
+			}
+			#container
+			{
+				position:relative;
+			}
+			#head_container
+			{
+				width:57%;
+				margin-left:3%;
+				position:absolute;
+				bottom:10px;
+				display:inline;
+				float:right;
+			}
+			#profile
+			{
+				width:40%;
+				
+			}
+			h1
+			{
+				font-size:45px;
+			}
+			
+			#subhead
+			{
+				font-size:30px;
+			}
+			p
+			{
+				font-size:18px;
+				text-align: justify;
+			}
+			#fixed_container
+			{
+				position:fixed;
+				width:100%;
+				bottom:0px;
+			}
+			#fixed_text
+			{
+				display:inline;
+				font-family: purisa,sans-serif;
+				color:rgb(200,0,0);
+				margin-left:10px;
+				font-size:28px;
+			}
+			#fixed_text2
+			{
+				display:inline;
+				float:right;
+				font-family: purisa,sans-serif;
+				color:rgb(200,0,0);
+				margin-right:10px;
+				font-size:28px;
+			}
+
+			#fixed
+			{
+				background-color:rgb(0,0,100);
+				box-shadow: 0px 0px 100px #000000;
+				width:100%;
+				border-top-left-radius:10px;border-top-right-radius:10px;
+			}
+			.thumbs
+			{
+				width:45px;
+				margin:10px;
+			}
+			.thumbs:hover
+			{
+				position:relative;
+				top:-5px;
+				-webkit-animation:position 2s;
+				width:45px;
+				margin:10px;
+			}
+			#follow
+			{
+				margin-left:50px;
+				display:inline;
+				
+			}
+			ul.location
+			{
+				list-style-image: url("Images/location.png");
+			}
+			ul.education
+			{
+				list-style-image: url("Images/education.png");
+			}
+			ul.organization
+			{
+				list-style-image: url("Images/organization.png");
+			}
+			#footer
+			{
+				text-align:center;
+			}
+
+			#contact_me
+			{
+				float:right;
+				display:inline;
+				position:relative;
+				
+				top:15px;
+				margin-right:10%;
+				width:110px
+				
+
+			}
+
+			.button
+			{
+				color:white;
+				background-color:orange;
+				text-decoration: none;
+				border: 3px solid white;
+				border-radius:3px;
+				padding:10px;
+			}
+
+			.button:active
+			{
+				background-color:rgb(200,120,0);
+			}
+			#text_container
+			{
+				width:20%;
+				float:left;
+				line-height:150%;
+			}
+			#input_container
+			{
+				float:left;
+			}
+			hr{
+				clear:both;
+
+			}
+			input[type=text]
+			{
+				margin:2px;
+			}
+		</style>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<div id="main">
+			<h1>Contact Me:</h1>
+			<hr>
+			<form action="insert.php" method="POST">
+				<div id="text_container">
+					<span id="form_text">Name: </span><br>
+					<span id="form_text">Email id: </span><br>
+					<span id="form_text">Subject: </span><br>
+					<span id="form_text">Your Message: </span>
+				</div>
+				<span id="input_container">
+				<input name="name" type="text" placeholder="Name" name="name" required/><br>
+				<input name="email" type="text" placeholder="Email id"  required/><br>
+				<input name="subject" type="text" placeholder="Subject"  required/><br>
+				<textarea name="message" required placeholder="Your Message"></textarea><br>
+				<input type="submit" value="submit"/><br><br>
+				</span>
+			</form>
+
+
+			<hr>
+			<div id="footer">
+				Copyright © 2015 Vaibhav Gosain
+				<br><br>
+		</div>
+			
+		</div>
+		
+		
+		<br><br><br><br>
+		<div id="fixed_container">
+			<div id="fixed_text">↓ Follow me here</div>
+			<div id="fixed_text2">Mail me ↓</div>
+			
+			<div id="fixed">
+				<div id="follow">
+					<a href="https://www.facebook.com/vaibhav.gosain.9" target="_blank">
+						<img class="thumbs" src="Images/fb.png"/>
+					</a>
+					<a href="https://plus.google.com/115943403911418022708/posts" target="_blank">
+						<img class="thumbs" src="Images/g+.png"/>
+					</a>
+					<a href="http://www.quora.com/Vaibhav-Gosain-1" target="_blank">
+						<img class="thumbs" src="Images/Q.png"/>
+					</a>
+					<a href="https://github.com/gvaibhav21" target="_blank">
+						<img class="thumbs" src="Images/gh.png"/>
+					</a>
+				</div>
+
+				<div id="contact_me">
+					<a href="contact me.html" target="_blank" style="text-decoration:none;">
+						<div class="button">Contact Me</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
